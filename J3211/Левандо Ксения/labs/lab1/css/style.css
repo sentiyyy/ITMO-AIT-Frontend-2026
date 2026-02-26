@@ -16,3 +16,14 @@ body {
     background-color: #ff7a00;
     border-color: #ff7a00;
 }
+
+.carousel-img{
+    object-fit: cover;
+    filter: brightness(50%)
+}
+
+.carousel-caption {
+    background: rgba(0,0,0,0.45);
+    padding: 20px;
+    border-radius: 10px;
+}
