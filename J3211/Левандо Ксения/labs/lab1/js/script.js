@@ -11,10 +11,10 @@ function showUserUI() {
     const block = document.getElementById("authButtons");
 
     block.innerHTML = `
-        <span class="text-light me-3">
-        My Profile
-        </span>
-        <button class="btn btn-outline-light" onclick="logout()">Logout</button>
+        <a href="dashboard.html" class="btn btn-outline-light me-2">
+            My Profile
+        </a>
+        <button class="btn btn-outline-warning" onclick="logout()">Logout</button>
     `;
 }
 
