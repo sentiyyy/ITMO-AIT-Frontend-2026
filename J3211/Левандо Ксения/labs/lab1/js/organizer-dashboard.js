@@ -25,7 +25,7 @@ function renderMyEvents() {
         myEventsContainer.innerHTML = `<p class="text-muted">No events yet.</p>`;
         return;
     }
-
+    
     myEvents.forEach(ev => {
         const col = document.createElement("div");
         col.className = "col-md-4";

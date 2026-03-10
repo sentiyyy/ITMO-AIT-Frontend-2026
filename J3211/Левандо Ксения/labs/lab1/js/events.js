@@ -24,7 +24,8 @@ const defaultEvents = [
     venue: "Uber Arena",
     description: "",
     image: "",
-    seatMap: "img/seatmap_festival.png"
+    seatMap: "img/seatmap_festival.png",
+    organizer: "cool_company@gmail.com"
 },
 
 {
@@ -36,7 +37,8 @@ const defaultEvents = [
     venue: "La Scala",
     description: "",
     image: "",
-    seatMap: "img/seatmap_theatre.png"
+    seatMap: "img/seatmap_theatre.png",
+    organizer: "cool_company@gmail.com"
 }
 
 ];
