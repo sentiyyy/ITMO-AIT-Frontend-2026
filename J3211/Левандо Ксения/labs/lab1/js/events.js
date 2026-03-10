@@ -6,6 +6,7 @@ const events = [
     date: "2026-11-21",
     city: "Paris",
     type: "Concert",
+    venue: "La Defense",
     description: "",
     image: ""
 },
@@ -16,6 +17,7 @@ const events = [
     date: "2026-12-05",
     city: "Berlin",
     type: "Festival",
+    venue: "Uber Arena",
     description: "",
     image: ""
 },
@@ -26,6 +28,7 @@ const events = [
     date: "2026-12-14",
     city: "Milan",
     type: "Theatre",
+    venue: "La Scala",
     description: "",
     image: ""
 }

@@ -37,10 +37,27 @@
     <h1 id="eventTitle"></h1>
     <img id="eventImage" class="img-fluid mb-4">
     <p id="eventDescription"></p>
+    <p id="eventVenue" class="text-muted"></p>
     <p class="text-muted" id="eventMeta"></p>
     <button class="btn btn-warning" id="buyBtn">
     Buy ticket
     </button>
+    <!-- seat map -->
+    <h3 class="mt-3">Seat Map</h3>
+    <img id="seatMap" class="img-fluid mb-4" src="" alt="Seat Map">
+
+    <!-- reviews -->
+        <h3>Reviews</h3>
+        <div id="reviewsContainer">
+        <p class="text-muted">No reviews yet.</p>
+        </div>
+
+        <div class="mb-3">
+        <label for="reviewInput" class="form-label">Leave a review</label>
+        <textarea id="reviewInput" class="form-control" rows="2"></textarea>
+        <button class="btn btn-primary mt-2" id="submitReview">Submit</button>
+        </div>
+
     </div>
 
     <!-- Footer -->
