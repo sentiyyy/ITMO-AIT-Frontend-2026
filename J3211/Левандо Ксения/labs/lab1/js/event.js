@@ -20,8 +20,10 @@ async function loadEvent() {
 loadEvent();
 
 function renderEvent() {
+    const eventImage = document.getElementById("eventImage");
+    eventImage.src = currentEvent.image;
+    eventImage.alt = `${currentEvent.name} - concert poster at ${currentEvent.venue}, ${currentEvent.city}`;
     document.getElementById("eventTitle").textContent = currentEvent.name;
-    document.getElementById("eventImage").src = currentEvent.image;
     document.getElementById("eventDescription").textContent = currentEvent.description;
     document.getElementById("eventVenue").textContent = `Venue: ${currentEvent.venue}`;
     document.getElementById("seatMap").src = currentEvent.seatmap;

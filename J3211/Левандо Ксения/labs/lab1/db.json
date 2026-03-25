@@ -13,6 +13,12 @@
       "name": "CoolerCompany",
       "email": "cooler_company@gmail.com",
       "password": "11111111"
+    },
+    {
+      "id": "67c1",
+      "name": "Cool Company",
+      "email": "cool_company@gmail.com",
+      "password": "11111111"
     }
   ],
   "events": [
@@ -23,7 +29,7 @@
       "city": "Munich",
       "venue": "Allianz Arena",
       "date": "2026-10-12",
-      "image": "https://i.pinimg.com/736x/07/07/8a/07078a26e5fc3d7b03a5691fd527dc68.jpg",
+      "image": "assets/bayern.webp",
       "description": "Bundesliga top match at Allianz Arena.",
       "organizer": "cool_company@gmail.com",
       "seatmap": "assets/seatmap1.jpg",
@@ -49,7 +55,7 @@
       "city": "Monza",
       "venue": "Autodromo Nazionale Monza",
       "date": "2026-09-05",
-      "image": "https://i.pinimg.com/1200x/50/2c/b0/502cb0c1ff3c96ad1992fb289f9ae3c1.jpg",
+      "image": "assets/f1_monza1.webp",
       "description": "High speed Formula 1 race at Monza circuit.",
       "organizer": "cool_company@gmail.com",
       "seatmap": "assets/seatmap2.jpg",
@@ -71,7 +77,7 @@
       "city": "Paris",
       "venue": "Stade de France",
       "date": "2026-07-18",
-      "image": "https://i.pinimg.com/1200x/b4/c8/d0/b4c8d0c9b1c458052281bb189708dabc.jpg",
+      "image": "assets/coldplay.webp",
       "description": "Live stadium show with Coldplay.",
       "organizer": "cool_company@gmail.com",
       "seatmap": "assets/seatmap3.webp",
@@ -97,7 +103,7 @@
       "city": "Paris",
       "venue": "Stadium",
       "type": "Sport",
-      "image": "",
+      "image": "assets/psg.webp",
       "description": "cool game bro",
       "seatmap": "",
       "categories": [
@@ -149,5 +155,6 @@
       "user": "anna@gmail.com",
       "text": "hi!"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
