@@ -38,12 +38,18 @@ function renderEvents() {
         filteredEvents.forEach((event) => {
             // create alt-text from event info
             const imageAlt = `${event.name} at ${event.venue}, ${event.city} - ${event.type} event poster`
+            // get a proper icon for event type
+            const typeIcon = getEventTypeIcon(event.type);
             container.innerHTML += `
             <div class="col-md-4">
             <div class="card h-100 shadow-sm">
             <img src="${event.image}" class="card-img-top" alt="${imageAlt}" loading="lazy">
             <div class="card-body">
-            <span class="badge bg-secondary mb-2">${event.type}</span>
+            <span class="badge bg-secondary mb-2">
+                <svg class="icon icon-type" width="16" height="16">
+                <use xlink:href="sprite.svg#${typeIcon}"></use>
+                </svg>
+            ${event.type}</span>
             <h5 class="card-title">${event.name}</h5>
 
             <p class="text-muted">
@@ -55,6 +61,10 @@ function renderEvents() {
             </p>
 
             <a href="event.html?id=${event.id}" class="btn btn-outline-primary me-2">
+            <!-- add an icon -->
+            <svg class="icon icon-scaling" width="24" height="24">
+            <use xlink:href="sprite.svg#icon-eye"></use>
+            </svg>
             View
             </a>
 
@@ -65,4 +75,17 @@ function renderEvents() {
 
 `;
         });
+}
+
+// get icon name in sprite
+function getEventTypeIcon(eventType) {
+    const icons = {
+        'Sport': 'icon-sport',
+        'Concert': 'icon-music', 
+        'Theatre': 'icon-theater',
+        'Exhibition': 'icon-gallery',
+        'Festival': 'icon-festival',
+    };
+    
+    return icons[eventType] || 'icon-default';
 }

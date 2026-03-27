@@ -31,8 +31,8 @@ body {
 
 .card-img-top {
     width: 100%;
-    height: 300px;
-    object-fit: contain;
+    height: 400px;
+    object-fit: cover;
     background-color: var(--card-img-color)
     /* background-color: #f0f0f0; */
 }
@@ -266,4 +266,26 @@ footer {
     }
 }
 
+.icon {
+    width: 24px;
+    height: 24px;
+    stroke: currentColor;  /* inherits text color */
+    stroke-width: 1.5;
+    fill: none;
+}
+
+.icon-scaling:hover {
+    stroke-width: 2;
+    transform: scale(1.05);
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.badge svg {
+    fill: currentColor;
+    stroke: none;
 }

@@ -60,13 +60,18 @@
             <!-- left: image -->
             <div class="col-md-5">
                 <div class="card shadow-sm">
-                    <img id="eventImage" class="card-img-top" style="max-height: 350px; object-fit: cover;">
+                    <img id="eventImage" class="card-img-top" style="height: 400px; object-fit: cover;">
                     <div class="card-body">
                         <span class="badge bg-secondary mb-2" id="eventType"></span>
                         <h3 id="eventTitle" class="card-title"></h3>
                         <p class="text-muted" id="eventMeta"></p>
                         <p id="eventVenue"></p>
-                        <button class="btn btn-warning w-100" id="buyBtn">Buy ticket</button>
+                        <button class="btn btn-warning w-100" id="buyBtn">
+                            <!-- add an icon -->
+                            <svg class="icon icon-scaling" width="24" height="24">
+                            <use xlink:href="sprite.svg#icon-buy"></use>
+                            </svg>
+                            Buy ticket</button>
                     </div>
                 </div>
             </div>
